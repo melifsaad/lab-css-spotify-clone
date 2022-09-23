@@ -10,7 +10,7 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-/* ________________________Header */
+/* ________________________Mobile Header */
 .navbar {
     background-color: white;
     width: 100%;
@@ -21,23 +21,23 @@ body {
     padding: 10px 0;
     margin-top: -10px;
 }
+
 .logo-spotify {
     width: 200px;
 }
 
 .menu h3 {
-    font-weight:inherit;
-    visibility: visible;
+    font-weight: inherit;
     padding: 0px 5px;
 }
+
 .menu {
-    display: flex;
     margin-right: 15px;
     display: none;
 }
 
 
-/* ________________________Header */
+/* ________________________Mobile Header */
 .banner {
     background-image: url(/images/landing.jpg);
     background-size: cover;
@@ -52,17 +52,17 @@ body {
     color: white;
 }
 
-.banner h1{
-    font-size: 33px;
+.banner h1 {
+    font-size: 50px;
 }
 
-.banner h3{
+.banner h3 {
     font-size: 15px;
     font-weight: lighter;
     margin: 0;
 }
 
-/* ________________________Seccion 1 */
+/* ________________________Mobile Seccion 1 */
 .section1 {
     display: flex;
     flex-direction: column;
@@ -78,15 +78,84 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 50px;
 }
 
-.feature
+.feature h3 {
+    color: #00B172;
+}
 
-/* ________________________Seccion 2 */
+.feature h4 {
+    font-weight: lighter;
+    margin: 8px 40px;
+    text-align: center;
+}
+
+/* ________________________Mobile Seccion 2 */
 .section2 {
     background-color: #00B172;
-} 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo-white {
+    margin: 30px 30px;
+}
 
 .info {
     color: white;
+}
+
+.info h2 {
+    text-align: center;
+}
+
+.info h4 {
+    margin: 20px 30px;
+    font-weight: lighter;
+}
+
+@media only screen and (min-width: 500px) {
+
+    /* ________________________Desktop Header */
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 0;
+        margin-top: -10px;
+    }
+
+    .logo-spotify {
+        width: 200px;
+        padding: 0 15px;
+    }
+
+    .menu {
+        display: flex;
+    }
+
+    /* ________________________Desktop Seccion 1 */
+    .content {
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+    }
+
+    .feature{
+        width: 400px;
+    }
+
+    .feature h4 {
+        font-weight: lighter;
+        font-size: 20px;
+        padding: 0 40px;
+    }
+/* ________________________Desktop Seccion 2 */
+.section2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 }
